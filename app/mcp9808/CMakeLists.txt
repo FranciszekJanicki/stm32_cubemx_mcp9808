@@ -1,21 +1,17 @@
 add_library(mcp9808 STATIC)
 
 target_sources(mcp9808 PRIVATE 
-    "mcp9808.cpp"
+    "mcp9808.c"
 )
 
 target_include_directories(mcp9808 PUBLIC 
-    "."
-    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_link_libraries(mcp9808 PRIVATE
-    utility
-    stm32cubemx
 )
 
 target_compile_options(mcp9808 PUBLIC
-    -std=c++23
+    -std=c23
     -Wall
     -Wextra
     -Wconversion
@@ -33,5 +29,4 @@ target_compile_options(mcp9808 PUBLIC
     -Wdouble-promotion
     -Wimplicit-fallthrough
     -Wcast-align
-    -fconcepts
 )
