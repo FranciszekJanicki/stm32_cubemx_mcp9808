@@ -1,0 +1,3 @@
+[submodule "submodules/mcp9808.git"]
+	path = submodules/mcp9808.git
+	url = git@github.com:FranciszekJanicki/mcp9808.git
